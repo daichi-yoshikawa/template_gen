@@ -66,6 +66,18 @@ function copy_files {
     files_src=(${files[@]:0:$n_files_cp})
     files_dst=(${files[@]: -$n_files_cp:$n_files_cp})
     for i in `seq 1 $n_files_cp`; do
+	if [[ ${files_src[$i-1]} != *.default ]]; then
+	    echo "Found invalid src file : ${files_src[$i-1]}."
+	    echo "Src file name must end with \".default\"."
+	    return $FALSE
+	fi
+	if [[ ${files_dst[$i-1]} == *.default ]]; then
+	    echo "Found invalid dst file : ${files_dst[$i-1]}."
+	    echo "Dst file name is not allowed to end with \".default\"."
+	    echo "This is to avoid overwriting source files in template_gen."
+	    return $FALSE
+	fi
+
 	echo "    - Copy ${files_src[$i-1]} to ${files_dst[$i-1]}."
 	cp ${files_src[$i-1]} ${files_dst[$i-1]}
 	echo "    - Done."

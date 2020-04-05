@@ -10,9 +10,9 @@ function define_langwise_params {
 
     FILES_SRC=($CMAKELISTS_DIR/CMakeLists.root.default
                $CMAKELISTS_DIR/CMakeLists.test.default
-               $TEMPLATES_DIR/test_main.cpp
-               $LANG_DIR/dot.gitignore
-               $LICENSES_DIR/LICENSE
+               $TEMPLATES_DIR/test_main.cpp.default
+               $LANG_DIR/dot.gitignore.default
+               $LICENSES_DIR/LICENSE_BSD3CLAUSE.default
                $COMMON_DIR/README.md.default)
     FILES_DST=($PROJECT_DIR/CMakeLists.txt
                $PROJECT_DIR/test/CMakeLists.txt

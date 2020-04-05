@@ -6,9 +6,9 @@ function define_langwise_params {
 
     DIRS_TO_MAKE=($PROJECT_NAME tests)
 
-    FILES_SRC=($LICENSES_DIR/LICENSE
+    FILES_SRC=($LICENSES_DIR/LICENSE_BSD3CLAUSE.default
                $COMMON_DIR/README.md.default
-               $LANG_DIR/dot.gitignore
+               $LANG_DIR/dot.gitignore.default
                $LANG_DIR/MANIFEST.in.default
                $LANG_DIR/setup.py.default
                $LANG_DIR/setup.cfg.default
