@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.1)
+# project(<PROJECT NAME> VERSION 0.1.0 LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 14)
+
+file(GLOB_RECURSE sources "src/[a-zA-Z]*.cpp")
+file(GLOB_RECURSE test_sources "test/[a-zA-Z]*.cpp")
+
+if(VERBOSE)
+  message(STATUS "sources: ${sources}")
+  message(STATUS "test_sources: ${test_sources}")
+endif()
+
+# add_library(<LIB NAME> SHARED ${sources})
+# add_executable(<EXE NAME> ${sources})
+
+# target_include_directories(<LIB or EXE NAME>
+#  PUBLIC ${PROJECT_SOURCE_DIR}/include
+# )
+
+# target_link_libraries(<LIB or EXE NAME>
+#   <libs>)
+
+add_subdirectory(test)

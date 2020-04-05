@@ -1,0 +1,6 @@
+# add_executable(test_<LIB or NAME> test_main.cpp)
+
+# target_link_libraries(test_<LIB or NAME>
+#   <LIB NAME>
+#   <libs>
+# )

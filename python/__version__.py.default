@@ -1,0 +1,8 @@
+__title__ = '<package name>'
+__description__ = '<brief introduction of package>'
+__url__ = '<url of repository or website>'
+__version__ = '<version in string like 1.0.0>'
+__author__ = '<full name>'
+__author_email__ = '<e-mail address>'
+__license__ = '<license like BSD-3-Clause>'
+__copyright__ = '<copyright description like Copyright (C) 2017 Daichi Yoshikawa>'
