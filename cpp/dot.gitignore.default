@@ -1,6 +1,8 @@
-/build
-/libs
-*.a
+*~
+*#
+
+build/
+libs/
 *.a.*
 *.so.*
 
